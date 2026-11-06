@@ -1,10 +1,10 @@
 
-[gd_scene load_steps=5 format=3]
+[gd_scene load_steps=6 format=3]
 
 [ext_resource type="Script" path="res://cordon.gd" id="1"]
 [ext_resource type="PackedScene" path="res://player.tscn" id="2"]
 [ext_resource type="Script" path="res://hud.gd" id="3"]
-[ext_resource type="Script" path="res://touch_controls.gd" id="4"]
+[ext_resource type="Script" path="res://joystick.gd" id="4"]
 
 [node name="Main" type="Node3D"]
 
@@ -17,5 +17,9 @@ position = Vector3(0, 1, 5)
 [node name="HUD" type="CanvasLayer" parent="."]
 script = ExtResource("3")
 
-[node name="TouchControls" type="CanvasLayer" parent="."]
+[node name="Joystick" type="Control" parent="HUD"]
+offset_left = 30.0
+offset_top = 400.0
+offset_right = 210.0
+offset_bottom = 580.0
 script = ExtResource("4")
