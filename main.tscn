@@ -24,3 +24,7 @@ offset_top = 400.0
 offset_right = 210.0
 offset_bottom = 580.0
 script = ExtResource("4")
+[node name="Sun" type="DirectionalLight3D" parent="."]
+rotation_degrees = Vector3(-45, -30, 0)
+light_energy = 1.5
+shadow_enabled = true
