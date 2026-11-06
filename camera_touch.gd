@@ -26,9 +26,7 @@ func _input(event):
             if camera:
                 camera.rotate_x(-delta.y * sensitivity)
                 camera.rotation.x = clamp(
-                    camera.rotation.x,
-                    -1.4,
-                    1.4
+                    camera.rotation.x, -1.4, 1.4
                 )
 
             last_position = event.position
